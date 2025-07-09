@@ -4,6 +4,9 @@ import adminAuthSchema from '../../models/admin/admin-schema';
 import HttpError from '../../models/Http-Error';
 import bcrypt from 'bcryptjs';
 import { IAdmin } from '../../types/admin.types';
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 interface AdminSignupRequest extends Request {
   body: {
