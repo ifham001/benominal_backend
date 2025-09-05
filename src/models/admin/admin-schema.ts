@@ -1,40 +1,46 @@
 import mongoose, { Schema } from "mongoose";
-import { IAdmin } from '../../types/admin.types.js';
+import { IAdmin } from "../../types/admin.types.js";
 
-const adminSchema = new Schema<IAdmin>({
+const adminSchema = new Schema<IAdmin>(
+  {
     name: {
-        type: String,
-        required: true,
-        trim: true
+      type: String,
+      required: true,
+      trim: true,
     },
-    orders: [{
+    orders: [
+      {
         type: Schema.Types.ObjectId,
-        ref: 'Order'
-    }],
-    users: [{
+        ref: "Order",
+      },
+    ],
+    users: [
+      {
         type: Schema.Types.ObjectId,
-        ref: 'User'
-    }],
-    products: [{
+        ref: "User",
+      },
+    ],
+    products: [
+      {
         type: Schema.Types.ObjectId,
-        ref: 'Product'
-    }],
+        ref: "Product",
+      },
+    ],
     email: {
-        type: String,
-        required: true,
-        unique: true,
-        trim: true
+      type: String,
+      required: true,
+      unique: true,
+      trim: true,
     },
     password: {
-        type: String,
-        required: true,
-        minlength: 6
+      type: String,
+      required: true,
+      minlength: 6,
     },
-    createdAt: {
-        type: Date,
-        default: Date.now
-    }
-}, { timestamps: true });
-const adminSchemas =  mongoose.model<IAdmin>('Admin', adminSchema); 
+  },
+  { timestamps: true }
+);
 
-export default adminSchemas 
+const Admin = mongoose.model<IAdmin>("Admin", adminSchema);
+
+export default Admin;
