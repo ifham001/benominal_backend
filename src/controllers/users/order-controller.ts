@@ -5,7 +5,7 @@ import mongoose, { ClientSession } from "mongoose";
 import productSchema from "../../models/admin/product-schema.js";
 import HttpError from "../../models/Http-Error.js";
 import authSchema from '../../models/users/auth-schema.js';
-import adminAuthSchema from '../../models/admin/admin-schema.js';
+import adminAuthSchema from '../../models/admin/Admin';
 import { getNextOrderNumber } from '../../util/getNextOrderNumber.js';
 import { IUser, IOrder, IAddress, IOrderItem } from '../../types/user.types.js';
 import { IProduct, IAdmin } from '../../types/admin.types.js';
