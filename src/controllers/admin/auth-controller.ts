@@ -1,6 +1,6 @@
 import { Request, Response, NextFunction } from 'express';
 import jwt from 'jsonwebtoken';
-import adminAuthSchema from '../../models/admin/adminSchemas'
+import adminAuthSchema from '../../models/admin/Admin'
 import HttpError from '../../models/Http-Error';
 import bcrypt from 'bcryptjs';
 import { IAdmin } from '../../types/admin.types';
