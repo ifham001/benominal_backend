@@ -35,5 +35,6 @@ const adminSchema = new Schema<IAdmin>({
         default: Date.now
     }
 }, { timestamps: true });
+const adminSchemas =  mongoose.model<IAdmin>('Admin', adminSchema); 
 
-export default const adminSchemas =  mongoose.model<IAdmin>('Admin', adminSchema); 
+export default adminSchemas 
