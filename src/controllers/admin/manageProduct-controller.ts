@@ -3,7 +3,7 @@ import { bucket, storage } from '../../config/gcs.js';
 import { v4 as uuidv4 } from 'uuid';
 import productSchema from '../../models/admin/product-schema.js';
 import HttpError from '../../models/Http-Error.js';
-import adminSchema from '../../models/admin/admin-schema.js';
+import adminSchema from '../../models/admin/Admin';
 import { IProduct } from '../../types/admin.types.js';
 
 
