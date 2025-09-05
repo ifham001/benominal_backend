@@ -5,7 +5,7 @@ import jwt from 'jsonwebtoken';
 import { OAuth2Client } from "google-auth-library";
 import twilio from 'twilio';
 import dotenv from 'dotenv';
-import adminAuthSchema from '../../models/admin/admin-schema.js';
+import adminAuthSchema from '../../models/admin/Admin';
 import { IUser } from '../../types/user.types.js';
 import { IAdmin } from '../../types/admin.types.js';
 
