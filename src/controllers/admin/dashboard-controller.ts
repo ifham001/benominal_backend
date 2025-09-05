@@ -1,5 +1,5 @@
 import { Request, Response, NextFunction } from 'express';
-import adminAuthSchema from "../../models/admin/admin-schema.js";
+import adminAuthSchema from "../../models/admin/Admin.js";
 import productSchema from "../../models/admin/product-schema.js";
 import OrderSchema from "../../models/users/order-schema.js";
 import authSchema from "../../models/users/auth-schema.js";
